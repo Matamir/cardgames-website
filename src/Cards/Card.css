@@ -1,0 +1,71 @@
+.spade {
+    position: relative;
+}
+
+.spade1 {
+    position: absolute;
+    left: 20px;
+
+    background-color: black;
+    width: 75px;
+    height: 50px;
+    rotate: -135deg;
+    border-radius: 50px 0 0 50px;
+}
+
+.spade2 {
+    position: absolute;
+    left: 0px;
+
+    background-color: black;
+    width: 75px;
+    height: 50px;
+    rotate: -45deg;
+    border-radius: 50px 0 0 50px;
+}
+
+.spade3 {
+    position: absolute;
+    left: 27px;
+    top: 20px;
+
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 60px solid black;
+}
+
+
+
+
+
+
+
+
+
+.heart {
+    position: relative;
+}
+
+.heart1 {
+    position: absolute;
+    left: 20px;
+
+    background-color: red;
+    width: 75px;
+    height: 50px;
+    rotate: 135deg;
+    border-radius: 50px 0 0 50px;
+}
+
+.heart2 {
+    position: absolute;
+    left: 0px;
+
+    background-color: red;
+    width: 75px;
+    height: 50px;
+    rotate: 45deg;
+    border-radius: 50px 0 0 50px;
+}
