@@ -1,11 +1,17 @@
+import { DEBUGGING } from "../Debugging";
 import "./Card.css";
 export function Card({ Value, Suit }) {
 
-    console.log(Value);
-    console.log(Suit);
-
     let LocValue = Value;
     let LocSuit = Suit;
+
+    // Sanatize inputs
+    if ((LocSuit !== "Spade") && (LocSuit !== "Club") && (LocSuit !== "Diamond") && (LocSuit !== "Red")) {
+        if (DEBUGGING) {
+            console.log("Invalid Suit")
+        }
+        return
+    }
 
     let Color = (LocSuit === "Spade" || LocSuit === "Club") ? "Black" : "Red";
 
