@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="App">
         <header className="App-header">
-          <Card Suit="Pee" Value="K"></Card>
+          <Card Suit="Diamond" Value="K"></Card>
         </header>
       </div>
     </>
