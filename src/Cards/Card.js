@@ -1,12 +1,11 @@
 import { DEBUGGER } from "../Debugging";
-import { CardValue } from "./enums.ts";
+import { CardValue, CardDisplay, CardColor, CardSuit } from "./enums.ts"
 import "./Card.css";
 
 export function Card({ Value, Suit }) {
 
-    let LocValue = Value.Display;
-    let LocSuit = Suit.Suit;
-    let LocColor = Suit.Color;
+    let LocValue = Value;
+    let LocSuit = Suit;
 
     ////////////////////////////////////////////////////////////////////////
 
@@ -34,7 +33,7 @@ export function Card({ Value, Suit }) {
 
 
 
-    let Color = LocColor;
+    let Color = CardColor.LocSuit;
     //let Color = (LocSuit === "Spade" || LocSuit === "Club") ? "Black" : "Red";
 
     let Spade =
@@ -84,7 +83,8 @@ export function Card({ Value, Suit }) {
     }
 
     return (
-        <div className="card">
+        <div className="card"
+            onClick={() => DEBUGGER(CardSuit[LocSuit] + CardDisplay[LocValue])}>
             {SuitDisplay}
             <h1>{LocValue}</h1>
         </div>
